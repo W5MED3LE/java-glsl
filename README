@@ -1,1 +1,15 @@
-This file was created by IntelliJ IDEA (Community Edition) IC-123.23 for binding GitHub repository
+#Java-GLSL
+
+This project contains some simple examples with java + glsl + opengl
+
+##js.ui.blob.BlobApplication
+
+Run with -Djava.library.path=lib
+
+Example video: http://www.youtube.com/watch?v=823Q4QyxyQI
+
+##js.ui.particle.ParticleApplication
+
+Run with -Djava.library.path=lib
+
+Example video: http://www.youtube.com/watch?v=1o4NM5IbAwg
