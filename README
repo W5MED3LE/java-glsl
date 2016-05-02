@@ -4,12 +4,21 @@ This project contains some simple examples with java + glsl + opengl
 
 js.ui.blob.BlobApplication
 -------------------
-Run with -Djava.library.path=lib
-
 Example video: http://www.youtube.com/watch?v=823Q4QyxyQI
 
 js.ui.particle.ParticleApplication
 -------------------
-Run with -Djava.library.path=lib
-
 Example video: http://www.youtube.com/watch?v=1o4NM5IbAwg
+
+Tested with
+-------------------
+- Java 6
+- Maven 3
+- Windows 7 64bit, AMD
+- IntelliJ IDEA
+
+Getting started
+-------------------
+1) Execute external/jogl-2.0-rc3/install.bat
+2) Open Project in IntelliJ IDEA
+3) Run main method of js.ui.blob.BlobApplication or js.ui.particle.ParticleApplication

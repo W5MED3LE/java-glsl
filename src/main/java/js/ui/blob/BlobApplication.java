@@ -1,5 +1,6 @@
 package js.ui.blob;
 
+import js.ui.util.LibUtil;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import sun.swing.SwingUtilities2;
@@ -27,6 +28,7 @@ public class BlobApplication {
 
     public static void main(String[] args) throws Exception {
         Logger log = LoggerFactory.getLogger(BlobApplication.class);
+        LibUtil.setDefaultLibPath();
 
         log.info("Load profile ...");
         GLProfile profile = GLProfile.get(GLProfile.GL4bc);
@@ -84,6 +86,8 @@ public class BlobApplication {
             }
         }, 1000 / TARGET_FPS, 1000 / TARGET_FPS, TimeUnit.MILLISECONDS);
     }
+
+
 
     private static final boolean DO_COUNT = false;
     private static long cnt = 0;

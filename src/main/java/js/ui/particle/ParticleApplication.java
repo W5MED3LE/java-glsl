@@ -1,6 +1,7 @@
 package js.ui.particle;
 
 import js.ui.particle.grid.*;
+import js.ui.util.LibUtil;
 import js.ui.util.Vec3;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
@@ -33,6 +34,7 @@ public class ParticleApplication {
     public static final int RENDER_SUBDIVS = 32;
 
     public static void main(String[] args) throws Exception {
+        LibUtil.setDefaultLibPath();
         Logger log = LoggerFactory.getLogger(ParticleApplication.class);
 
         log.info("Load profile ...");
@@ -122,7 +124,6 @@ public class ParticleApplication {
                 gridFactory.setColorField(particleSystem.getColorField());
             }
 
-            @Override
             public void run() {
                 if (calculate.get()) {
                     long now = getNow();
